@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}blog tiltes{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+	<h1>我的博客</h1>
+</div>
+<div class="row">
+	<div class="col-xs-12 col-md-8">
+		<ul>
+	{% for blog in blogs %}
+		<li><a href="{{ blog.id }}">{{ blog.title }}</a></li>
+	{% endfor %}
+	</ul>
+	</div>
+	<div class="col-xs-6 col-md-4">
+	<h2>广告</h2>
+	<p>跟老丫学：www.pyy.com</p>
+	<img width="200px" src="https://www.downloadwallpapers.info/preview/2016/02/13/18179_cat-fluffy-kitten_1920x1300_h.jpg" title="Fluffy Cat Wallpaper">
+	</div>
+</div>
+{% endblock %}
