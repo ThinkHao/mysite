@@ -27,7 +27,7 @@
 			{% if userinfo.photo %}
 			<img src="{{userinfo.photo | striptags}}" class="img-circle" id="my_photo" name="user_face">
 			{% else %}
-			<img src="{% static 'images/newton.jpg' %}" name="user_face" class="img-circle" id="my_photo">
+			<img src="{% static 'images/newton.jpg' %}" name="user_face" class="img-circle" id="my_photo" width="300px">
 			{% endif %}
 		</div>
 		<div>
